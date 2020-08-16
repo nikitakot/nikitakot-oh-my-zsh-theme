@@ -18,7 +18,7 @@ NEWLINE=$'\n'
 PROMPT='%{$fg[cyan]%}%3~%{$reset_color%} '
 PROMPT+='%{$fg[magenta]%}$(parse_git_branch)%{$reset_color%}'
 PROMPT+='%{$fg[green]%}$(parse_node_version)%{$reset_color%}${NEWLINE}'
-PROMPT+='%(?:%{$fg_bold[blue]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}'
+PROMPT+='%(?:%{$fg_bold[blue]%}$ :%{$fg_bold[red]%}$ )%{$reset_color%}'
 
 RPROMPT='${time}'
 
