@@ -17,10 +17,9 @@ parse_node_version() {
 NEWLINE=$'\n'
 PROMPT='%{$fg_bold[cyan]%}%3~%{$reset_color%} '
 PROMPT+='%{$fg[magenta]%}$(parse_git_branch)%{$reset_color%}'
-PROMPT+='%{$fg[green]%}$(parse_node_version)%{$reset_color%}${NEWLINE}'
+PROMPT+='%{$fg[green]%}$(parse_node_version)%{$reset_color%}'
+PROMPT+='${time}${NEWLINE}'
 PROMPT+='%(?:%{$fg[cyan]%}$ :%{$fg[red]%}$ )%{$reset_color%}'
-
-RPROMPT='${time}'
 
 time_enabled="%(?.%{$fg[cyan]%}.%{$fg[red]%})%*%{$reset_color%}"
 time_disabled="%{$fg[blue]%}%*%{$reset_color%}"
